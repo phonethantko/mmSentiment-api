@@ -14,7 +14,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app)
 session = []
 
-TEXT = pickle.load(open(f'TEXT.pkl', 'rb'))
+TEXT = pickle.load(open(f'TEXT.pkl', 'rb'),map_location=‘cpu’)
 model = model.LSTM(2764, 300, 128, 1,
                    2, True, 0.5, TEXT.vocab.stoi[TEXT.pad_token])
 TOKENIZER = lambda x: x.split()
