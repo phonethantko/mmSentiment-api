@@ -11,7 +11,7 @@ import re
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy dog'
 app.config['CORS_HEADERS'] = 'Content-Type'
-cors = CORS(app, resources={r"/api/prediction": {"origins": "http://localhost:8080"}})
+cors = CORS(app)
 session = []
 
 TEXT = pickle.load(open(f'TEXT.pkl', 'rb'))
