@@ -2,7 +2,7 @@ dill==0.2.9
 Flask==1.0.3
 Flask-Cors==3.0.7
 gunicorn==19.9.0
-nltk==3.4.1
+nltk==3.6.3
 numpy==1.16.4
 Pillow==6.0.0
 requests==2.22.0
